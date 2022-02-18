@@ -5,4 +5,7 @@
         <h2>{{ job.title }}</h2>
         <p>{{ job.body }}</p>
     </div>
+
+    <p><a href="{% url 'job_edit' job.pk %}">+ Edit Job</a></p>
+    <p><a href="{% url 'job_delete' job.pk %}">+ Delete Job</a></p>
 {% endblock content %}
